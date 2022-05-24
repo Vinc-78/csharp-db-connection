@@ -18,7 +18,7 @@ namespace csharp_db_connection // Note: actual namespace depends on the project 
 
 
                 using (SqlCommand insert = new SqlCommand(@"insert into clienti (Id, Nome, Cognome, Codice_cliente)
-                value (1,'nome', 'cognome', 154", conn))
+                value (1,'nome', 'cognome', 154)", conn))
                 { 
                     var numrows =insert.ExecuteNonQuery();
                     Console.WriteLine(numrows);
